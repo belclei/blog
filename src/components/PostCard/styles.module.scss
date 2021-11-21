@@ -1,0 +1,42 @@
+.container {
+  width: 100%;
+
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 1px solid var(--primary-400);
+  border-radius: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  transition: border-color 0.3s;
+  &:hover {
+    border: 1px solid var(--primary-500);
+  }
+
+  span {
+    width: 100%;
+    font-size: small;
+    color: var(--info-500);
+  }
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    color: var(--text-500);
+  }
+  img {
+    border-radius: 4px;
+    width: 100%;
+  }
+}
+.infoDate {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+.infoReadTime {
+  text-align: right;
+  margin-top: 0.5rem;
+}
