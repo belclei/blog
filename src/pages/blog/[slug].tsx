@@ -4,6 +4,8 @@ import Link from 'next/link'
 
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
+import { Main } from '../../components/Main'
+import { Loading } from '../../components/Loading'
 
 type IPostUrl = {
   slug: string
@@ -15,15 +17,12 @@ type PostPageProps = {
 const PostPage = (props: PostPageProps) => {
   const router = useRouter()
   if (router.isFallback) {
-    return <h1>Carregando</h1>
+    return <Loading />
   }
   return (
-    <>
-      <Link href="/">
-        <a>Volta</a>
-      </Link>
+    <Main>
       <h1>{props.slug}</h1>
-    </>
+    </Main>
   )
 }
 
