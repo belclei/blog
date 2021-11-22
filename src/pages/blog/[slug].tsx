@@ -83,8 +83,9 @@ const PostPage = (props: PostPageProps) => {
           </p>
         </div>
         <Share />
-        <Comments />
       </article>
+      <h2>Comentários</h2>
+      <Comments />
     </Main>
   )
 }
