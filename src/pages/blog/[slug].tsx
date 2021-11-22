@@ -10,6 +10,7 @@ import { Loading } from '../../components/Loading'
 import { Share } from '../../components/Share'
 
 import styles from './post.module.scss'
+import Comments from '../../components/Comments'
 
 type IPostUrl = {
   slug: string
@@ -82,6 +83,7 @@ const PostPage = (props: PostPageProps) => {
           </p>
         </div>
         <Share />
+        <Comments />
       </article>
     </Main>
   )
