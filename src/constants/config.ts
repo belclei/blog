@@ -5,5 +5,6 @@ export const Config = {
   url: 'https://belclei.dev.br',
   locale: 'pt-br',
   author: 'Belclei Fasolo',
-  pagination_size: 8
+  image: '',
+  twitter_profile: '@belclei'
 }
