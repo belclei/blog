@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import { FaPlusCircle, FaBookReader } from 'react-icons/fa'
 
-import { GetStaticPaths, GetStaticProps } from 'next'
+import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import { useRouter } from 'next/router'
 import { Main } from '../../components/Main'
 import { Loading } from '../../components/Loading'
@@ -20,7 +20,7 @@ type PostPageProps = {
   slug: string
 }
 
-const PostPage = (props: PostPageProps) => {
+const PostPage: NextPage<PostPageProps> = (props: PostPageProps) => {
   const router = useRouter()
   if (router.isFallback) {
     return <Loading />

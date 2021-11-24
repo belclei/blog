@@ -13,50 +13,35 @@ export function getPostFileNames() {
   return fs.readdirSync(postsDirectory)
 }
 
-export function getPostByName(name: string, fields: string[] = []) {
+export function getPostByName(name: string) {
   const fullPath = join(postsDirectory, name)
 
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
-  const items: PostItems = {}
 
-  // Ensure only the minimal needed data is exposed
-  fields.forEach(field => {
-    if (field === 'name') {
-      items[field] = name
-    }
-    if (field === 'path') {
-      items[field] = fullPath
-    }
-    if (field === 'content') {
-      items[field] = content
-    }
-    if (data[field]) {
-      items[field] = data[field] ?? null
-    }
-  })
+  const items: PostItems = { ...data }
+  items['name'] = name
+  items['path'] = fullPath
+  items['content'] = content
 
   return items
 }
-export function getPostBySlug(slug: string, fields: string[] = []) {
+export function getPostBySlug(slug: string) {
   const names = getPostFileNames()
   const name = names.find(name => new RegExp(`\\d{3,}-${slug}.md`, 'gi').test(name))
 
-  return name ? getPostByName(name, fields) : null
+  return name ? getPostByName(name) : null
 }
 
-export function getAllPosts(fields: string[] = []) {
+export function getAllPosts() {
   const names = getPostFileNames()
 
-  const sortField = 'createdAt'
-  !fields.includes(sortField) && fields.push(sortField)
-
   const posts = names
-    .map(name => getPostByName(name, fields))
+    .map(name => getPostByName(name))
     // filter posts with createdAt date in future
-    .filter(post => new Date(post[sortField]) <= new Date())
+    .filter(post => new Date(post['createdAt']) <= new Date())
     // sort posts by date in descending order
-    .sort((post1, post2) => (post1[sortField] > post2[sortField] ? -1 : 1))
+    .sort((post1, post2) => (post1['createdAt'] > post2['createdAt'] ? -1 : 1))
 
   return posts
 }
