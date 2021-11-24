@@ -12,17 +12,14 @@ export function Header() {
         </a>
       </Link>
       <div className={styles.socialMedia}>
-        <a href="https://www.linkedin.com/in/belclei/" target="_blank" rel="noreferrer">
-          <SiLinkedin size={20} />
-        </a>
         <a href="https://www.twitter.com/belclei/" target="_blank" rel="noreferrer">
           <SiTwitter size={20} />
         </a>
-        <a href="mailto:belclei@gmail.com">
-          <SiGmail size={20} />
-        </a>
         <a href="https://github.com/belclei" target="_blank" rel="noreferrer">
           <SiGithub size={20} />
+        </a>
+        <a href="https://www.linkedin.com/in/belclei/" target="_blank" rel="noreferrer">
+          <SiLinkedin size={20} />
         </a>
       </div>
     </header>

@@ -11,6 +11,8 @@
   font-family: 'Kaushan Script';
 }
 .socialMedia {
+  display: flex;
+  align-items: center;
   a {
     margin: 0 0.5rem;
   }

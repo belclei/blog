@@ -1,9 +1,20 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
-
+html,
+body {
+  height: 100%;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
 :root {
   --white: #fff;
   --gray-100: #e1e1e6;
@@ -38,6 +49,8 @@
 }
 
 body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
   background: var(--background-500);
   color: var(--text-500);
 }
@@ -48,6 +61,15 @@ textarea,
 select,
 button {
   font: 400 1rem 'Montserrat', sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
 }
 
 button {
@@ -73,4 +95,13 @@ h5,
 h6 {
   color: var(--primary-500);
   font-family: 'Mukta', sans-serif;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
 }
