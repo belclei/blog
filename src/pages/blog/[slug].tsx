@@ -1,9 +1,8 @@
 import React from 'react'
 
-import Image from 'next/image'
 import { FaPlusCircle, FaBookReader } from 'react-icons/fa'
 
-import { GetStaticPaths, GetStaticPathsContext, GetStaticProps, GetStaticPropsContext, NextPage } from 'next'
+import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import { useRouter } from 'next/router'
 import { Main } from '../../components/Main'
 import { Loading } from '../../components/Loading'
@@ -16,6 +15,7 @@ import { getAllPosts, getPostBySlug } from '../../services/Content'
 import { formatRelative } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
 import { ParsedUrlQuery } from 'querystring'
+import { markdownToHtml } from '../../services/Markdown'
 
 interface IPostUrl extends ParsedUrlQuery {
   slug: string
@@ -62,7 +62,7 @@ const PostPage: NextPage<PostPageProps> = (props: PostPageProps) => {
         </div>
         <Share />
         <span className={styles.subtitle}>{props.subtitle}</span>
-        <div>{props.content}</div>
+        <div dangerouslySetInnerHTML={{ __html: props.content }} />
         <Share />
       </article>
       <h2>Comentários</h2>
@@ -93,7 +93,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       notFound: true
     }
   }
-  // const content = await markdownToHtml(postContent || '')
+  const content = await markdownToHtml(post.content || '')
   const timeToRead = Math.ceil(post.content.split(' ').length / 200)
   const createdAt_formatted = formatRelative(new Date(post.createdAt), new Date(), {
     locale: ptBR
@@ -104,7 +104,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       slug,
       timeToRead,
       createdAt_formatted,
-      ...post
+      ...post,
+      content
     },
     revalidate: 60 * 5 // 5 minutos
   }
