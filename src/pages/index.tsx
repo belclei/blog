@@ -52,13 +52,12 @@ export const getStaticProps: GetStaticProps = async () => {
     })
     return { timeToRead, createdAt_formatted, ...post }
   })
-  console.log('🚀 ~ file: index.tsx ~ line 44 ~ formattedPosts', formattedPosts)
 
   return {
     props: {
       posts: formattedPosts
     },
-    revalidate: 60 * 60 * 24 // 1 dia
+    revalidate: 60 // 1 minuto
   }
 }
 

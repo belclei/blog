@@ -16,7 +16,7 @@ export function PostCard(props: PostCardProps) {
       <Link href={props.link}>
         <a>
           <span className={styles.infoDate}>{props.createdAt}</span>
-          <img alt="Internet" src={props.image} />
+          <img alt={props.title} src={props.image} />
           <h1>{props.title}</h1>
           <p>{props.subtitle}</p>
           <span className={styles.infoReadTime}>Leia em {props.timeToRead} min</span>
