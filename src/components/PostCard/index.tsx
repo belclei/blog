@@ -1,20 +1,25 @@
 import styles from './styles.module.scss'
 import Link from 'next/link'
+import { parseWithOptions } from 'date-fns/fp'
 
-export function PostCard() {
+interface PostCardProps {
+  link: string
+  title: string
+  subtitle: string
+  image: string
+  createdAt: string
+  timeToRead: number
+}
+export function PostCard(props: PostCardProps) {
   return (
     <article className={styles.container}>
-      <Link href="/blog/teste">
+      <Link href={props.link}>
         <a>
-          <span className={styles.infoDate}>21 de outubro de 2020</span>
-          <img alt="Internet" src="/posts/000/helloworld.jpg" />
-          <h1>Internet</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem beatae quo delectus corporis
-            praesentium magni expedita voluptatibus, impedit, repellendus ducimus dolorem laudantium eos eveniet vero
-            aliquam eum aliquid. Debitis, soluta.
-          </p>
-          <span className={styles.infoReadTime}>Leia em 3 min</span>
+          <span className={styles.infoDate}>{props.createdAt}</span>
+          <img alt="Internet" src={props.image} />
+          <h1>{props.title}</h1>
+          <p>{props.subtitle}</p>
+          <span className={styles.infoReadTime}>Leia em {props.timeToRead} min</span>
         </a>
       </Link>
     </article>
