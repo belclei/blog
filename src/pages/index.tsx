@@ -3,6 +3,7 @@ import { ptBR } from 'date-fns/locale'
 import type { GetStaticProps, NextPage } from 'next'
 import { Main } from '../components/Main'
 import { PostCard } from '../components/PostCard'
+import { Config } from '../constants/config'
 import { getAllPosts } from '../services/Content'
 import { metaProps } from '../utils/types'
 
@@ -21,7 +22,6 @@ interface BlogProps {
   ]
 }
 const Blog: NextPage<BlogProps> = (props: BlogProps) => {
-  console.log('🚀 ~ file: index.tsx ~ line 10 ~ props', props)
   const meta: metaProps = {
     title: 'Blog'
   }
@@ -31,11 +31,11 @@ const Blog: NextPage<BlogProps> = (props: BlogProps) => {
       {props.posts.map(post => (
         <PostCard
           key={post.slug}
-          link={`/blog/${post.slug}`}
+          link={`${Config.url}/blog/${post.slug}`}
           title={post.title}
           subtitle={post.subtitle}
           createdAt={post.createdAt_formatted}
-          image={post.image}
+          image={`${Config.url}${post.image}`}
           timeToRead={post.timeToRead}
         />
       ))}

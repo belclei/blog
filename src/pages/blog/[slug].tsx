@@ -16,53 +16,60 @@ import { formatRelative } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
 import { ParsedUrlQuery } from 'querystring'
 import { markdownToHtml } from '../../services/Markdown'
+import { Config } from '../../constants/config'
 
 interface IPostUrl extends ParsedUrlQuery {
   slug: string
 }
 interface PostPageProps {
-  slug: string
-  title: string
-  subtitle: string
-  createdAt: string
-  createdAt_formatted: string
-  timeToRead: number
-  image: string
-  content: string
+  post: {
+    slug: string
+    title: string
+    subtitle: string
+    createdAt: string
+    createdAt_formatted: string
+    timeToRead: number
+    image: string
+    content: string
+  }
 }
 
 const PostPage: NextPage<PostPageProps> = (props: PostPageProps) => {
   const router = useRouter()
+  if (!router.isFallback && !props.post?.slug) {
+    return <Loading />
+  }
+
   if (router.isFallback) {
     return <Loading />
   }
   const meta: metaProps = {
-    title: props.title,
-    description: props.subtitle,
+    title: props.post.title,
+    description: props.post.subtitle,
     post: {
-      date: props.createdAt,
-      image: props.image,
-      modified_date: props.createdAt
+      date: props.post.createdAt,
+      image: `${Config.url}${props.post.image}`,
+      modified_date: props.post.createdAt
     }
   }
   return (
     <Main meta={meta}>
       <article className={styles.postContainer}>
-        <img alt={props.title} src={props.image} />
-        <h1>{props.title}</h1>
+        <img alt={props.post.title} src={props.post.image} />
+        <h1>{props.post.title}</h1>
         <div className={styles.infoContainer}>
           <div>
             <FaPlusCircle size={14} />
-            <span>{props.createdAt_formatted}</span>
+            <span>{props.post.createdAt_formatted}</span>
           </div>
           <div>
             <FaBookReader size={14} />
-            <span>{props.timeToRead} min de leitura</span>
+            <span>{props.post.timeToRead} min de leitura</span>
           </div>
         </div>
         <Share />
-        <span className={styles.subtitle}>{props.subtitle}</span>
-        <div dangerouslySetInnerHTML={{ __html: props.content }} />
+        <span className={styles.subtitle}>{props.post.subtitle}</span>
+        <div dangerouslySetInnerHTML={{ __html: props.post.content }} />
         <Share />
       </article>
       <h2>Comentários</h2>
@@ -74,13 +81,14 @@ const PostPage: NextPage<PostPageProps> = (props: PostPageProps) => {
 export const getStaticPaths: GetStaticPaths = async () => {
   const posts = getAllPosts()
 
+  const paths = posts.map(post => ({
+    params: {
+      slug: post.slug
+    }
+  }))
   return {
-    paths: posts.map(post => ({
-      params: {
-        slug: post.slug
-      }
-    })),
-    fallback: true
+    paths,
+    fallback: false
   }
 }
 
@@ -101,11 +109,13 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
   return {
     props: {
-      slug,
-      timeToRead,
-      createdAt_formatted,
-      ...post,
-      content
+      post: {
+        slug,
+        timeToRead,
+        createdAt_formatted,
+        ...post,
+        content
+      }
     },
     revalidate: 60 * 5 // 5 minutos
   }
