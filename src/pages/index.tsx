@@ -31,7 +31,7 @@ const Blog: NextPage<BlogProps> = (props: BlogProps) => {
       {props.posts.map(post => (
         <PostCard
           key={post.slug}
-          link={`${Config.url}/blog/${post.slug}`}
+          link={`/blog/${post.slug}`}
           title={post.title}
           subtitle={post.subtitle}
           createdAt={post.createdAt_formatted}
