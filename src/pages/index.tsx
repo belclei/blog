@@ -1,5 +1,3 @@
-import { format, formatDistance, formatRelative, subDays } from 'date-fns'
-import { ptBR } from 'date-fns/locale'
 import type { GetStaticProps, NextPage } from 'next'
 import { Main } from '../components/Main'
 import { PostCard } from '../components/PostCard'
@@ -14,7 +12,6 @@ interface BlogProps {
       title: string
       subtitle: string
       createdAt: string
-      createdAt_formatted: string
       timeToRead: number
       image: string
       content: string
@@ -34,7 +31,7 @@ const Blog: NextPage<BlogProps> = (props: BlogProps) => {
           link={`/blog/${post.slug}`}
           title={post.title}
           subtitle={post.subtitle}
-          createdAt={post.createdAt_formatted}
+          createdAt={post.createdAt}
           image={`${Config.url}${post.image}`}
           timeToRead={post.timeToRead}
         />
@@ -47,10 +44,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const posts = getAllPosts()
   const formattedPosts = posts.map(post => {
     const timeToRead = Math.ceil(post.content.split(' ').length / 200)
-    const createdAt_formatted = formatRelative(new Date(post.createdAt), new Date(), {
-      locale: ptBR
-    })
-    return { timeToRead, createdAt_formatted, ...post }
+    return { timeToRead, ...post }
   })
 
   return {

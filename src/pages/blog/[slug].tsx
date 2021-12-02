@@ -27,7 +27,6 @@ interface PostPageProps {
     title: string
     subtitle: string
     createdAt: string
-    createdAt_formatted: string
     timeToRead: number
     image: string
     content: string
@@ -39,10 +38,12 @@ const PostPage: NextPage<PostPageProps> = (props: PostPageProps) => {
   if (!router.isFallback && !props.post?.slug) {
     return <Loading />
   }
-
   if (router.isFallback) {
     return <Loading />
   }
+  const createdAt_formatted = formatRelative(new Date(props.post.createdAt), new Date(), {
+    locale: ptBR
+  })
   const meta: metaProps = {
     title: props.post.title,
     description: props.post.subtitle,
@@ -60,7 +61,7 @@ const PostPage: NextPage<PostPageProps> = (props: PostPageProps) => {
         <div className={styles.infoContainer}>
           <div>
             <FaPlusCircle size={14} />
-            <span>{props.post.createdAt_formatted}</span>
+            <span>{createdAt_formatted}</span>
           </div>
           <div>
             <FaBookReader size={14} />
@@ -103,16 +104,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   }
   const content = await markdownToHtml(post.content || '')
   const timeToRead = Math.ceil(post.content.split(' ').length / 200)
-  const createdAt_formatted = formatRelative(new Date(post.createdAt), new Date(), {
-    locale: ptBR
-  })
 
   return {
     props: {
       post: {
         slug,
         timeToRead,
-        createdAt_formatted,
         ...post,
         content
       }

@@ -39,7 +39,7 @@ export function getAllPosts() {
   const posts = names
     .map(name => getPostByName(name))
     // filter posts with createdAt date in future
-    .filter(post => new Date(post['createdAt']) <= new Date())
+    .filter(post => post['createdAt'] <= new Date().toISOString())
     // sort posts by date in descending order
     .sort((post1, post2) => (post1['createdAt'] > post2['createdAt'] ? -1 : 1))
 

@@ -1,6 +1,7 @@
 import styles from './styles.module.scss'
 import Link from 'next/link'
-import { parseWithOptions } from 'date-fns/fp'
+import { ptBR } from 'date-fns/locale'
+import { formatRelative } from 'date-fns'
 
 interface PostCardProps {
   link: string
@@ -11,11 +12,14 @@ interface PostCardProps {
   timeToRead: number
 }
 export function PostCard(props: PostCardProps) {
+  const createdAt_formatted = formatRelative(new Date(props.createdAt), new Date(), {
+    locale: ptBR
+  })
   return (
     <article className={styles.container}>
       <Link href={props.link}>
         <a>
-          <span className={styles.infoDate}>{props.createdAt}</span>
+          <span className={styles.infoDate}>{createdAt_formatted}</span>
           <img alt={props.title} src={props.image} />
           <h1>{props.title}</h1>
           <p>{props.subtitle}</p>

@@ -4,7 +4,7 @@ title: 'Internet'
 subtitle: 'Você ainda consegue imaginar a tua vida sem internet? Ela não chegou ao nosso acesso há muito tempo.
 Mesmo assim, teve gente que passou por sérios problemas outro dia que aplicativos de mensagens instantâneas passaram por instabilidades e pessoas simplesmente esqueceram que poderiam se comunicar por simples ligações telefônicas.'
 image: '/posts/000/helloworld.jpg'
-createdAt: '2021-11-20 03:33:33'
+createdAt: '2021-11-16T05:35:07.322Z'
 ---
 
 # Internet

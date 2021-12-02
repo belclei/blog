@@ -59,16 +59,8 @@ const Meta = (props: metaProps) => {
           <meta name="twitter:image:alt" content={props.description ?? Config.description} />
           <meta name="twitter:image:width" content="800" />
           <meta name="twitter:image:height" content="630" />
-          <meta
-            property="article:published_time"
-            content={new Date(props.post.date).toISOString()}
-            key="article:published_time"
-          />
-          <meta
-            property="article:modified_time"
-            content={new Date(props.post.modified_date).toISOString()}
-            key="article:modified_time"
-          />
+          <meta property="article:published_time" content={props.post.date} key="article:published_time" />
+          <meta property="article:modified_time" content={props.post.modified_date} key="article:modified_time" />
           <script
             type="application/ld+json"
             // eslint-disable-next-line react/no-danger
@@ -92,8 +84,8 @@ const Meta = (props: metaProps) => {
             },
             "headline": "${props.title} | ${Config.site_name}",
             "image": ["${props.post.image}"],
-            "datePublished": "${new Date(props.post.date).toISOString()}",
-            "dateModified": "${new Date(props.post.modified_date).toISOString()}",
+            "datePublished": "${props.post.date}",
+            "dateModified": "${props.post.modified_date}",
             "mainEntityOfPage": {
               "@type": "WebPage",
               "@id": "${Config.url}${router.asPath}"
