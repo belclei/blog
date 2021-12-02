@@ -69,7 +69,7 @@ const PostPage: NextPage<PostPageProps> = (props: PostPageProps) => {
         </div>
         <Share />
         <span className={styles.subtitle}>{props.post.subtitle}</span>
-        <div dangerouslySetInnerHTML={{ __html: props.post.content }} />
+        <div className={styles.content} dangerouslySetInnerHTML={{ __html: props.post.content }} />
         <Share />
       </article>
       <h2>Comentários</h2>

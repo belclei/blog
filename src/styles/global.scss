@@ -49,7 +49,6 @@ body {
 }
 
 body {
-  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background: var(--background-500);
   color: var(--text-500);
@@ -61,6 +60,7 @@ textarea,
 select,
 button {
   font: 400 1rem 'Montserrat', sans-serif;
+  line-height: 1.5;
 }
 
 img,
