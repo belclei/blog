@@ -16,8 +16,8 @@ Você sabe como tudo isso começou?
 Seja muito bem vindo ao meu blog!
 Antes de eu te contar sobre a guerra fria... pois é, dá pra se dizer que a internet é um subproduto desse período nebuloso da nossa história recente.
 
-Mas antes eu quero te pedir um favor. Me ajuda a melhorar e a me tornar meus conteúdos cada vez mais relevante para você e para toda a comunidade de desenvolvedores?
-Você só precisa me avisar se gostou, ou se não gostou, e deixar seu feedback aqui nos comentários.
+Mas antes eu quero te pedir um favor. Me ajuda a melhorar e a tornar meus conteúdos cada vez mais relevante para você e para toda a comunidade de desenvolvedores?
+Você só precisa me avisar se gostou, ou se não gostou. Enfim, deixar seu feedback aqui nos comentários.
 
 ## Guerra Fria
 
@@ -37,9 +37,11 @@ A rivalidade se estendia também no campo tecnológico. Os soviéticos lançaram
 
 E já que o medo era tanto, os Estados Unidos queriam se proteger de possíveis bombardeios em terras americanas. Uma das preocupações era que se pontos específicos fossem atingidos, todas as telecomunicações do país poderiam entrar em colapso. Foi então que o departamento de defesa, através da agência de projetos de pesquisa avançada (em inglês formando o acrônimo ARPA) resolveu criar a ARPANet, uma rede de computadores onde cada ponto se equivale, ou seja, não há comando central. E sendo assim, caso um destes pontos saia da rede por algum motivo, nenhum dos outros pontos é afetado.
 
+![Representação de um esquema descentralizado de conexões](/posts/001/25.png)
+
 ## A rede mundial de computadores
 
-Durante um bom tempo a ARPANet serviu apenas aos interesses militares americanos. Mas aí, em 1982, começou uma abertura para que as universidades também pudessem usufruir de seus benefícios. Logo surgiu a necessidade de se conectar com pessoas em outros países. Foi então que outras redes foram agregadas ao sistema, conectando países como Holanda, Dinamarca e Suécia. Neste momento nascia a _rede internacional de computadores_ como a conhecemos, ou simplesmente a Internet.
+Durante um bom tempo a ARPANet serviu apenas aos interesses militares americanos. Mas aí, em 1982, começou uma abertura para que as universidades também pudessem usufruir de seus benefícios. Logo surgiu a necessidade de se conectar com pessoas em outros países. Foi então que outras redes foram agregadas ao sistema, conectando países como Holanda, Dinamarca e Suécia. Neste momento nascia a _rede internacional de computadores_ como a conhecemos, ou simplesmente a **Internet**.
 
 No Brasil, o uso comercial da internet só foi liberado a partir de 1995. Para os americanos isso já era realidade desde 1987. Mas não pense que as empresas já tinham seus websites. Ainda não. Websites só no nosso próximo encontro (_Spoiler!_). Naquela época transmitia-se pela internet basicamente textos, através de terminais de linhas de comando.
 
@@ -55,11 +57,11 @@ Todos os computadores conectados à internet conseguem se entender, pois institu
 
 ## Web
 
-Quando falamos em internet, automaticamente pensamos em sites. Mas eles só surgiram a partir de 1990, com a criação da Web. Que é diferente de internet, embora muitos confundam.
+Quando falamos em internet, automaticamente pensamos em sites. Mas eles só surgiram a partir de 1990, com a criação da Web, que é diferente de internet, embora muitos confundam.
 
 Por sinal, a história que levou ao surgimento da Web é muito legal. Conta-se que o time do Organização Europeia de Pesquisa Nuclear (CERN), capitaneado por Tim Berners-Lee queria criar uma forma de facilitar a divulgação e a atualização de trabalhos pesquisa. Mas além disso, o objetivo era que um trabalho pudesse referenciar outro, criando assim uma teia de informações interconectadas, permitindo um ganho enorme em colaboração entre pesquisadores do mundo todo.
 
-No nosso próximo encontro eu vou falar um pouco mais o **Sir** Tim Berners-Lee, coisas que ele criou e que você usa todo dia em nem sabe.
+No nosso próximo encontro eu vou falar um pouco mais sobre o **Sir** Tim Berners-Lee, coisas que ele criou e que você usa todo dia em nem sabe.
 
 ![Tim Berners-Lee recebendo congratulação da rainha Elizabeth II](/posts/001/40.webp)
 
