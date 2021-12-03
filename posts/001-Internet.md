@@ -2,21 +2,16 @@
 slug: 'internet'
 title: 'Internet'
 subtitle: 'Você ainda consegue imaginar a tua vida sem internet? Ela não chegou ao nosso acesso há muito tempo.
-Mesmo assim, teve gente que passou por sérios problemas outro dia que aplicativos de mensagens instantâneas passaram por instabilidades e pessoas simplesmente esqueceram que poderiam se comunicar por simples ligações telefônicas.'
-image: '/posts/000/helloworld.jpg'
+Mesmo assim, teve gente que passou por sérios problemas outro dia que aplicativos de mensagens instantâneas passaram por instabilidades. Pessoas simplesmente esqueceram que poderiam se comunicar por simples ligações telefônicas.'
+image: '/posts/001/internet.jpg'
 createdAt: '2021-12-01T06:03:00.300-03:00'
 ---
-
-# Internet
-
-Você ainda consegue imaginar a tua vida sem internet? Ela não chegou ao nosso acesso há muito tempo.
-Mesmo assim, teve gente que passou por sérios problemas outro dia que aplicativos de mensagens instantâneas passaram por instabilidades e pessoas simplesmente esqueceram que poderiam se comunicar por simples ligações telefônicas.
 
 ![Pessoas utilizam celular apenas para usar internet](/posts/001/10.png)
 
 Você sabe como tudo isso começou?
 
-## Introdução
+## Internet
 
 Seja muito bem vindo ao meu blog!
 Antes de eu te contar sobre a guerra fria... pois é, dá pra se dizer que a internet é um subproduto desse período nebuloso da nossa história recente.
@@ -34,7 +29,7 @@ E no dia 29 de outubro ocorria a primeira troca de mensagens pela ARPANet (que d
 
 Na cidade de Los Angeles, Leonard Kleinrock, e Charlie Kline, professor e aluno da universidade da Califórnia enviaram a palavra "login". Na outra ponta desta conexão estava Bill Duval, pesquisador da universidade de Stanford, que fica em Palo Alto, também na California. Ele recebeu apenas "lo". Acontece que o computador travou assim que recebeu o segundo caractere, truncando a mensagem. Mas note que independentemente deste travamento, ficou demonstrado que a internet era possível.
 
-![Distância física entre as universidades precursoras da internet](../../public/posts/001_20.png)
+![Distância física entre as universidades precursoras da internet](/posts/001/20.png)
 
 Você deve ter estudado isso também. A Guerra fria não foi propriamente marcada por conflitos bélicos diretos entre União Soviética e Estados Unidos. Mas eles mediam forças sempre que havia uma oportunidade, seja em competições esportivas, campanhas midiáticas, e até em influência sobre países menores fazendo com que estes sim entrassem em confronto. Naquela época o mundo inteiro vivia em constante tensão com medo do fim do mundo que certamente viria junto com uma guerra nuclear. A guerra fria só foi acabar quase em 1990, e até esse ponto, sempre que tocava a vinheta do plantão globo tinha gente que pensava: 'Ai me Deus, é agora que o mundo acaba'.
 
@@ -66,7 +61,7 @@ Por sinal, a história que levou ao surgimento da Web é muito legal. Conta-se q
 
 No nosso próximo encontro eu vou falar um pouco mais o **Sir** Tim Berners-Lee, coisas que ele criou e que você usa todo dia em nem sabe.
 
-![Tim Berners-Lee recebendo congratulação da rainha Elizabeth II](../../public/posts/001_40.webp)
+![Tim Berners-Lee recebendo congratulação da rainha Elizabeth II](/posts/001/40.webp)
 
 Por hoje eu vou ficando por aqui. Fica de olho que já já sai do forno o próximo artigo. Enquanto isso, me conta aqui nos comentários o que achou.
 
