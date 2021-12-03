@@ -4,7 +4,7 @@ title: 'Internet'
 subtitle: 'Você ainda consegue imaginar a tua vida sem internet? Ela não chegou ao nosso acesso há muito tempo.
 Mesmo assim, teve gente que passou por sérios problemas outro dia que aplicativos de mensagens instantâneas passaram por instabilidades e pessoas simplesmente esqueceram que poderiam se comunicar por simples ligações telefônicas.'
 image: '/posts/000/helloworld.jpg'
-createdAt: '2022-12-01T06:03:00.300-03:00'
+createdAt: '2021-12-01T06:03:00.300-03:00'
 ---
 
 # Internet
@@ -12,7 +12,7 @@ createdAt: '2022-12-01T06:03:00.300-03:00'
 Você ainda consegue imaginar a tua vida sem internet? Ela não chegou ao nosso acesso há muito tempo.
 Mesmo assim, teve gente que passou por sérios problemas outro dia que aplicativos de mensagens instantâneas passaram por instabilidades e pessoas simplesmente esqueceram que poderiam se comunicar por simples ligações telefônicas.
 
-![Pessoas utilizam celular apenas para usar internet](../../public/posts/001_10.png)
+![Pessoas utilizam celular apenas para usar internet](/posts/001/10.png)
 
 Você sabe como tudo isso começou?
 
