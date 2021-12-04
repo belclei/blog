@@ -3,7 +3,7 @@ slug: 'internet'
 title: 'Internet'
 subtitle: 'Você ainda consegue imaginar a tua vida sem internet? Ela não chegou ao nosso acesso há muito tempo.
 Mesmo assim, teve gente que passou por sérios problemas outro dia que aplicativos de mensagens instantâneas passaram por instabilidades. Pessoas simplesmente esqueceram que poderiam se comunicar por simples ligações telefônicas.'
-image: '/posts/001/internet.jpg'
+image: '/posts/001.png'
 createdAt: '2021-12-01T06:03:00.300-03:00'
 ---
 
@@ -11,7 +11,7 @@ createdAt: '2021-12-01T06:03:00.300-03:00'
 
 Você sabe como tudo isso começou?
 
-## Internet
+## Introdução
 
 Seja muito bem vindo ao meu blog!
 Antes de eu te contar sobre a guerra fria... pois é, dá pra se dizer que a internet é um subproduto desse período nebuloso da nossa história recente.
@@ -33,11 +33,13 @@ Na cidade de Los Angeles, Leonard Kleinrock, e Charlie Kline, professor e aluno 
 
 Você deve ter estudado isso também. A Guerra fria não foi propriamente marcada por conflitos bélicos diretos entre União Soviética e Estados Unidos. Mas eles mediam forças sempre que havia uma oportunidade, seja em competições esportivas, campanhas midiáticas, e até em influência sobre países menores fazendo com que estes sim entrassem em confronto. Naquela época o mundo inteiro vivia em constante tensão com medo do fim do mundo que certamente viria junto com uma guerra nuclear. A guerra fria só foi acabar quase em 1990, e até esse ponto, sempre que tocava a vinheta do plantão globo tinha gente que pensava: 'Ai me Deus, é agora que o mundo acaba'.
 
+![Plantão GLobo](/posts/001/30.png)
+
 A rivalidade se estendia também no campo tecnológico. Os soviéticos lançaram ao espaço o primeiro satélite, o primeiro ser vivo (a cadelinha Laika), o primeiro homem, e a primeira mulher. Aí os Estados Unidos responderam enviando o homem à Lua. Enfim, nessa disputa só o medo era maior do que as voluptuosas quantidades de dinheiro que era investido.
 
 E já que o medo era tanto, os Estados Unidos queriam se proteger de possíveis bombardeios em terras americanas. Uma das preocupações era que se pontos específicos fossem atingidos, todas as telecomunicações do país poderiam entrar em colapso. Foi então que o departamento de defesa, através da agência de projetos de pesquisa avançada (em inglês formando o acrônimo ARPA) resolveu criar a ARPANet, uma rede de computadores onde cada ponto se equivale, ou seja, não há comando central. E sendo assim, caso um destes pontos saia da rede por algum motivo, nenhum dos outros pontos é afetado.
 
-![Representação de um esquema descentralizado de conexões](/posts/001/25.png)
+![Representação de um esquema descentralizado de conexões](/posts/001/40.png)
 
 ## A rede mundial de computadores
 
@@ -63,7 +65,7 @@ Por sinal, a história que levou ao surgimento da Web é muito legal. Conta-se q
 
 No nosso próximo encontro eu vou falar um pouco mais sobre o **Sir** Tim Berners-Lee, coisas que ele criou e que você usa todo dia em nem sabe.
 
-![Tim Berners-Lee recebendo congratulação da rainha Elizabeth II](/posts/001/40.webp)
+![Tim Berners-Lee recebendo congratulação da rainha Elizabeth II](/posts/001/50.png)
 
 Por hoje eu vou ficando por aqui. Fica de olho que já já sai do forno o próximo artigo. Enquanto isso, me conta aqui nos comentários o que achou.
 
