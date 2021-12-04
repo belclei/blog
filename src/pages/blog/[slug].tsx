@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { FaPlusCircle, FaBookReader } from 'react-icons/fa'
-
+import Image from 'next/image'
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import { useRouter } from 'next/router'
 import { Main } from '../../components/Main'
@@ -56,7 +56,7 @@ const PostPage: NextPage<PostPageProps> = (props: PostPageProps) => {
   return (
     <Main meta={meta}>
       <article className={styles.postContainer}>
-        <img alt={props.post.title} src={props.post.image} />
+        <Image src={props.post.image} alt={props.post.title} width="1200px" height="630px" layout="intrinsic" />
         <h1>{props.post.title}</h1>
         <div className={styles.infoContainer}>
           <div>

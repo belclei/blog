@@ -32,7 +32,7 @@ const Blog: NextPage<BlogProps> = (props: BlogProps) => {
           title={post.title}
           subtitle={post.subtitle}
           createdAt={post.createdAt}
-          image={`${Config.url}${post.image}`}
+          image={post.image}
           timeToRead={post.timeToRead}
         />
       ))}

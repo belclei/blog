@@ -2,6 +2,7 @@ import styles from './styles.module.scss'
 import Link from 'next/link'
 import { ptBR } from 'date-fns/locale'
 import { formatRelative } from 'date-fns'
+import Image from 'next/image'
 
 interface PostCardProps {
   link: string
@@ -20,7 +21,7 @@ export function PostCard(props: PostCardProps) {
       <Link href={props.link}>
         <a>
           <span className={styles.infoDate}>{createdAt_formatted}</span>
-          <img alt={props.title} src={props.image} />
+          <Image src={props.image} alt={props.title} width="1200px" height="630px" layout="intrinsic" />
           <h1>{props.title}</h1>
           <p>{props.subtitle}</p>
           <span className={styles.infoReadTime}>Leia em {props.timeToRead} min</span>
