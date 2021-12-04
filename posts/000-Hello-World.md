@@ -2,7 +2,7 @@
 slug: 'hello-world'
 title: 'Hello World 🥳'
 subtitle: 'Reza a lenda que sempre que um programador começa a usar uma nova tecnologia, para ter sorte em sua nova empreitada, deve iniciar com "Hello World". Eu é que não ia ser bobo de arriscar logo agora com meu blog, né? Deixa pro próximo framework javascript que eu for testar.'
-createdAt: '2021-12-01T06:00:00.300-03:00'
+createdAt: '2021-12-04T06:00:00.300-03:00'
 image: '/posts/000.png'
 ---
 
