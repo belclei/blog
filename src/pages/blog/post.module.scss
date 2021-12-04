@@ -59,6 +59,10 @@
   }
   p {
     margin: 0.75rem 0;
+    img + em {
+      display: block;
+      text-align: center;
+    }
   }
   ul {
     margin: 0.75rem 2rem;
