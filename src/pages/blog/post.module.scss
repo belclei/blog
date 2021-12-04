@@ -64,8 +64,11 @@
     margin: 0.75rem 2rem;
   }
   img {
-    margin: 0 1.5rem;
+    margin: 1.5rem;
     max-width: 90%;
+    box-shadow: 1px 6px 10px 6px var(--background-300);
+    -webkit-box-shadow: 1px 6px 10px 6px var(--background-300);
+    -moz-box-shadow: 1px 6px 10px 6px var(--background-300);
   }
   pre {
     margin: 1rem;
