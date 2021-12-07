@@ -71,11 +71,11 @@ const PostPage: NextPage<PostPageProps> = (props: PostPageProps) => {
             <span>{props.post.timeToRead} min de leitura</span>
           </div>
         </div>
-        <Share title={props.post.title} subtitle={props.post.subtitle} url={`${Config.url}/blog/${props.post.slug}`} />
+        <Share title={props.post.title} subtitle={props.post.subtitle} url={`${Config.url}/blog/${props.post.slug}/`} />
         <span className={styles.subtitle}>{props.post.subtitle}</span>
         {props.post.video && <Video title={props.post.title} video={props.post.video} />}
         <div className={styles.content} dangerouslySetInnerHTML={{ __html: props.post.content }} />
-        <Share title={props.post.title} subtitle={props.post.subtitle} url={`${Config.url}/blog/${props.post.slug}`} />
+        <Share title={props.post.title} subtitle={props.post.subtitle} url={`${Config.url}/blog/${props.post.slug}/`} />
       </article>
       <h2>Comentários</h2>
       <Comments />

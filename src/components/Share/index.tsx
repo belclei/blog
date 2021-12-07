@@ -22,11 +22,7 @@ export function Share(props: ShareProps) {
         <SiTwitter size={18} />
       </a>
       <a
-        href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
-          props.url
-        )}&title=${encodeURIComponent(props.title)}&summary=${encodeURIComponent(props.subtitle)}&source="${
-          Config.site_name
-        }"`}
+        href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(props.url)}`}
         target="_blank"
         rel="noreferrer"
         aria-label="compartilhe no linkedin"
