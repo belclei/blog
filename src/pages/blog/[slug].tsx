@@ -49,7 +49,7 @@ const PostPage: NextPage<PostPageProps> = (props: PostPageProps) => {
   const meta: metaProps = {
     title: props.post.title,
     description: props.post.subtitle,
-    url: `${Config.url}/${props.post.slug}`,
+    url: `${Config.url}/blog/${props.post.slug}`,
     post: {
       date: props.post.createdAt,
       image: `${Config.url}${props.post.image}`,
