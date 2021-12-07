@@ -17,6 +17,7 @@ import { ptBR } from 'date-fns/locale'
 import { ParsedUrlQuery } from 'querystring'
 import { markdownToHtml } from '../../services/Markdown'
 import { Config } from '../../constants/config'
+import { Video } from '../../components/Video'
 
 interface IPostUrl extends ParsedUrlQuery {
   slug: string
@@ -29,6 +30,7 @@ interface PostPageProps {
     createdAt: string
     timeToRead: number
     image: string
+    video?: string
     content: string
   }
 }
@@ -70,6 +72,7 @@ const PostPage: NextPage<PostPageProps> = (props: PostPageProps) => {
         </div>
         <Share />
         <span className={styles.subtitle}>{props.post.subtitle}</span>
+        {props.post.video && <Video title={props.post.title} video={props.post.video} />}
         <div className={styles.content} dangerouslySetInnerHTML={{ __html: props.post.content }} />
         <Share />
       </article>
