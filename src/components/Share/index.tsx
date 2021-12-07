@@ -2,21 +2,19 @@ import { SiLinkedin, SiTwitter } from 'react-icons/si'
 import { Config } from '../../constants/config'
 import styles from './styles.module.scss'
 
-export function Share() {
-  const currentURL = ''
-  const props = {
-    post: {
-      title: '',
-      subtitle: ''
-    }
-  }
+interface ShareProps {
+  title: string
+  subtitle: string
+  url: string
+}
+export function Share(props: ShareProps) {
   return (
     <section className={styles.container}>
       <span>Compartilhe: </span>
       <a
         href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-          `Encontrei esse post no blog do @belclei: ${props.post.title}`
-        )}&url=${encodeURIComponent(currentURL)}`}
+          `Encontrei esse post no blog do @belclei: ${props.title}`
+        )}&url=${encodeURIComponent(props.url)}`}
         target="_blank"
         rel="noreferrer"
       >
@@ -24,8 +22,8 @@ export function Share() {
       </a>
       <a
         href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
-          currentURL
-        )}&title=${encodeURIComponent(props.post.title)}&summary=${encodeURIComponent(props.post.subtitle)}&source="${
+          props.url
+        )}&title=${encodeURIComponent(props.title)}&summary=${encodeURIComponent(props.subtitle)}&source="${
           Config.site_name
         }"`}
         target="_blank"
