@@ -17,6 +17,7 @@ export function Share(props: ShareProps) {
         )}&url=${encodeURIComponent(props.url)}`}
         target="_blank"
         rel="noreferrer"
+        aria-label="compartilhe no twitter"
       >
         <SiTwitter size={18} />
       </a>
@@ -28,6 +29,7 @@ export function Share(props: ShareProps) {
         }"`}
         target="_blank"
         rel="noreferrer"
+        aria-label="compartilhe no linkedin"
       >
         <SiLinkedin size={18} />
       </a>
