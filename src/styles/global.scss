@@ -27,12 +27,12 @@ body {
   --cyan-500: #61dafb;
   --yellow-500: #eba417;
 
-  --primary-500: #f11f15;
-  --primary-400: #ac2335;
-  --background-500: #220054;
-  --background-400: #322074;
-  --background-300: #4300a8;
-  --text-500: #f1eecd;
+  --primary-500: #ff0055;
+  --primary-400: #ff0055;
+  --background-500: #191921;
+  --background-400: #3b1d2e;
+  --background-300: #181851;
+  --text-500: #fefefc;
   --info-500: #bdaaae;
   --info-400: #fdccae;
 }
@@ -59,7 +59,7 @@ input,
 textarea,
 select,
 button {
-  font: 400 1rem 'Montserrat', sans-serif;
+  font: 400 1rem 'Quicksand', sans-serif;
   line-height: 1.5;
 }
 
@@ -78,12 +78,12 @@ button {
 }
 
 a {
-  color: var(--primary-500);
+  color: var(--primary-400);
   text-decoration: none;
 
   transition: color 2.2s;
   &:hover {
-    filter: brightness(0.8);
+    filter: brightness(1.1);
   }
 }
 
@@ -94,7 +94,7 @@ h4,
 h5,
 h6 {
   color: var(--primary-500);
-  font-family: 'Mukta', sans-serif;
+  font-family: 'Aleo';
 }
 p,
 h1,
