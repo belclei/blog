@@ -62,14 +62,15 @@
     img + em {
       display: block;
       text-align: center;
+      background-color: inherit;
     }
   }
   ul {
     margin: 0.75rem 2rem;
   }
   img {
-    margin: 1.5rem;
-    max-width: 90%;
+    margin: 1rem;
+    max-width: 95%;
     box-shadow: 1px 6px 10px 6px var(--background-300);
     -webkit-box-shadow: 1px 6px 10px 6px var(--background-300);
     -moz-box-shadow: 1px 6px 10px 6px var(--background-300);
@@ -78,10 +79,13 @@
     margin: 1rem;
     font-size: 0.75em;
   }
-
+  em {
+    background-color: var(--primary-500);
+    font-style: normal;
+  }
   blockquote {
-    border-left: 0.5rem solid var(--background-300);
+    border-left: 0.5rem solid var(--primary-400);
     padding: 0.5rem 0.5rem 0.5rem 1rem;
-    background-color: var(--background-400);
+    background-color: var(--background-300);
   }
 }

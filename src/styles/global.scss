@@ -17,6 +17,7 @@ body {
 }
 :root {
   --white: #fff;
+  --black: #000;
   --gray-100: #e1e1e6;
   --gray-300: #a8a8b3;
   --gray-700: #323238;
@@ -24,15 +25,11 @@ body {
   --gray-850: #1f2729;
   --gray-900: #121214;
 
-  --cyan-500: #61dafb;
-  --yellow-500: #eba417;
-
-  --primary-500: #ff0055;
-  --primary-400: #ff0055;
-  --background-500: #191921;
-  --background-400: #3b1d2e;
-  --background-300: #181851;
-  --text-500: #fefefc;
+  --primary-500: #fd7014;
+  --primary-400: #d68f02;
+  --background-500: #222831;
+  --background-300: #393e46;
+  --text-500: #fef4f4;
   --info-500: #bdaaae;
   --info-400: #fdccae;
 }
@@ -78,12 +75,13 @@ button {
 }
 
 a {
-  color: var(--primary-400);
+  color: var(--primary-500);
   text-decoration: none;
 
-  transition: color 2.2s;
+  transition: color 0.5s;
   &:hover {
-    filter: brightness(1.1);
+    filter: brightness(1.2);
+    color: var(--primary-400);
   }
 }
 
