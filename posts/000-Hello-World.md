@@ -19,7 +19,9 @@ Enquanto escrevia isso tudo, fui percebendo minha jornada, e que já possuo uma 
 
 Olhando um pouco para o contexto atual das organizações que vem se destacando neste meio, é possível perceber, contudo, o quanto a tecnologia evoluiu neste período, e como vem evoluindo cada vez mais rapidamente.
 
-O profissional considerado a vedete da vez no mercado de desenvolvimento de software, já não é mais nem o tal do Desenvolvedor Full Stack, que combina conhecimentos tanto de FrontEnd quanto BackEnd. Depois que a Netflix divulgou seu modelo de trabalho, surgiu a figura do Desenvolvedor Full Cycle. Este profissional é um pouco mais generalista, entendendo também de Operações (a famigerada Infra). Eu me perguntava se uma pessoa dessas é capaz de performar bem, ou se ao tentar fazer de tudo acabaria virando um "pato", sabe? Aquele que voa, nada, e anda. Mas acaba não fazendo nada direito. Acabei percebendo que sim, e conhecendo o conceito de carreira em "T". Basicamente, o profissional em T é aquele que conhece um pouco de tudo, mas que de um assunto ele possui um domínio aprofundado.
+O profissional considerado a vedete da vez no mercado de desenvolvimento de software, já não é mais nem o tal do Desenvolvedor Full Stack, que combina conhecimentos tanto de FrontEnd quanto BackEnd. Depois que a Netflix divulgou seu modelo de trabalho, surgiu a figura do Desenvolvedor Full Cycle. Este profissional é um pouco mais generalista, entendendo também de Operações (a famigerada Infra).
+
+Eu me perguntava se uma pessoa dessas é capaz de performar bem, ou se ao tentar fazer de tudo acabaria virando um "pato", sabe? Aquele que voa, nada, e anda. Mas acaba não fazendo nada direito. Acabei percebendo que sim, e conhecendo o conceito de carreira em "T". Basicamente, o profissional em T é aquele que conhece um pouco de tudo, mas que de um assunto ele possui um domínio aprofundado.
 
 Venho direcionando minha carreira neste sentido, e te convido para me acompanhar neste caminho, para crescermos juntos, sendo cada vez melhores profissionais.
 
