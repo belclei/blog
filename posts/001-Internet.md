@@ -14,9 +14,9 @@ Você sabe como tudo isso começou?
 ## Introdução
 
 Seja muito bem vindo ao meu blog!
-Antes de eu te contar sobre a guerra fria... pois é, dá pra se dizer que a internet é um subproduto desse período nebuloso da nossa história recente.
+Antes de eu te contar sobre a guerra fria... pois é, dá pra se dizer que a internet é um subproduto desse período tenso da nossa história recente.
 
-Mas antes eu quero te pedir um favor. Me ajuda a melhorar e a tornar meus conteúdos cada vez mais relevante para você e para toda a comunidade de desenvolvedores?
+Mas antes eu quero te pedir um favor. Me ajuda a melhorar e a tornar meus conteúdos cada vez mais relevantes para você e para toda a comunidade de desenvolvedores?
 Você só precisa me avisar se gostou, ou se não gostou. Enfim, deixar seu feedback aqui nos comentários.
 
 ## Guerra Fria
@@ -25,17 +25,17 @@ Era o auge da guerra fria entre americanos e soviéticos. Foi o ano em que Neil 
 
 Senhoras e senhores, **QUÊ** ano foi esse de 1969 heim?!
 
-E no dia 29 de outubro ocorria a primeira troca de mensagens pela ARPANet (que depois acabaria se tornando a internet). Acontece que essa comunicação foi mal sucedida. É claro que isso não torna este feito menos importante, mas nos contextualiza para o tamanho do desafio tecnológico que uma simples troca de mensagens representava na época.
+E no dia 29 de outubro ocorria a primeira troca de mensagens pela ARPANet (precursora da internet). Acontece que essa comunicação foi mal sucedida. É claro que isso não torna este feito menos importante, mas nos contextualiza para o tamanho do desafio tecnológico que uma simples troca de mensagens representava na época.
 
 Na cidade de Los Angeles, Leonard Kleinrock, e Charlie Kline, professor e aluno da universidade da Califórnia enviaram a palavra "login". Na outra ponta desta conexão estava Bill Duval, pesquisador da universidade de Stanford, que fica em Palo Alto, também na California. Ele recebeu apenas "lo". Acontece que o computador travou assim que recebeu o segundo caractere, truncando a mensagem. Mas note que independentemente deste travamento, ficou demonstrado que a internet era possível.
 
 ![Distância física entre as universidades precursoras da internet](/posts/001/20.png)
 
-Você deve ter estudado isso também. A Guerra fria não foi propriamente marcada por conflitos bélicos diretos entre União Soviética e Estados Unidos. Mas eles mediam forças sempre que havia uma oportunidade, seja em competições esportivas, campanhas midiáticas, e até em influência sobre países menores fazendo com que estes sim entrassem em confronto. Naquela época o mundo inteiro vivia em constante tensão com medo do fim do mundo que certamente viria junto com uma guerra nuclear. A guerra fria só foi acabar quase em 1990, e até esse ponto, sempre que tocava a vinheta do plantão globo tinha gente que pensava: 'Ai me Deus, é agora que o mundo acaba'.
+Você deve ter estudado isso também. A Guerra fria não foi propriamente marcada por conflitos bélicos diretos entre União Soviética e Estados Unidos. Mas eles mediam forças sempre que havia uma oportunidade, seja em competições esportivas, campanhas midiáticas, e até em influência sobre países menores fazendo com que estes sim entrassem em confronto. Naquela época o mundo inteiro vivia em constante tensão com medo do fim do mundo que certamente viria junto com uma guerra nuclear. A guerra fria só foi acabar quase em 1990, e até esse ponto, sempre que tocava a vinheta do plantão globo tinha gente que pensava: 'Ai me Deus, é agora que o mundo acaba!'.
 
 ![Plantão Globo](/posts/001/30.png)
 
-A rivalidade se estendia também no campo tecnológico. Os soviéticos lançaram ao espaço o primeiro satélite, o primeiro ser vivo (a cadelinha Laika), o primeiro homem, e a primeira mulher. Aí os Estados Unidos responderam enviando o homem à Lua. Enfim, nessa disputa só o medo era maior do que as voluptuosas quantidades de dinheiro que era investido.
+A rivalidade se estendia também no campo tecnológico. Os soviéticos lançaram ao espaço o primeiro satélite, o primeiro ser vivo (a cadelinha Laika), o primeiro homem, e a primeira mulher. Aí os Estados Unidos responderam enviando o homem à Lua. Enfim, nessa disputa só o medo era maior do que as voluptuosas quantidades de dinheiro que eras investidas.
 
 E já que o medo era tanto, os Estados Unidos queriam se proteger de possíveis bombardeios em terras americanas. Uma das preocupações era que se pontos específicos fossem atingidos, todas as telecomunicações do país poderiam entrar em colapso. Foi então que o departamento de defesa, através da agência de projetos de pesquisa avançada (em inglês formando o acrônimo ARPA) resolveu criar a ARPANet, uma rede de computadores onde cada ponto se equivale, ou seja, não há comando central. E sendo assim, caso um destes pontos saia da rede por algum motivo, nenhum dos outros pontos é afetado.
 
@@ -51,7 +51,7 @@ Todos os computadores conectados à internet conseguem se entender, pois institu
 
 - Camada de _Aplicação_: Desenvolvimento de aplicações Web; Gerenciamento de redes (ex: aplicações SNMP-based); P2P; VoIP; Web services; Gerenciamento de serviços de redes (ex: DNS, DHHCP, email); Segurança.
 - Camada de _Apresentação_: Ações relacionadas com a manutenção da semântica das informações transmitidas (ex: aplicações de registros bancários, utilização de criptografia e compressão de dados).
-- Camada de _Sessão_: Funcionalidades relacionadas com estabelecimento de sessões entre diferentes usuários (ex: browser escalona o uso da rede entre as diferentes páginas abertas pelos usuários).
+- Camada de _Sessão_: Funcionalidades relacionadas com estabelecimento de sessões entre diferentes usuários (ex: o navegador escalona o uso da rede entre as diferentes páginas abertas pelos usuários).
 - Camada de _Transporte_: Gerenciamento de barreiras de segurança; Criação de protocolos (ex: protocolos de tempo real para comunicação de voz).
 - Camada de _Rede_: Desenvolvimento de roteadores; Gerenciamento dos roteadores; Endereçamento de dispositivos (IPv4, IPv6).
 - Camada de _Enlace_: Projeto e desenvolvimento de equipamentos (ex: pontos de acesso WiFi, modens, switches).

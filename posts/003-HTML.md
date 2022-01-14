@@ -114,7 +114,7 @@ Existem 6 tags para indicar títulos (h1, h2, h3, h4, h5, e h6). O H significa h
 
     <h2>Ebulição</h2>
     <p>Muito utilizado na Europa</p>
-    -
+
     <h3>Café turco</h3>
     <p>Se você é um amante de café bem forte e escuro, então o café turco é a pedida ideal.</p>
     <h3>Método do Cowboy</h3>
@@ -193,7 +193,7 @@ E se nesse processo você tiver alguma dúvida, basta vir aqui e deixá-la nos c
 
 Isso me fez lembrar de outro recurso presente no HTML. Imagine que você queira deixar alguma anotação no seu arquivo HTML para facilitar o teu entendimento quando ler o código. Você não quer que esta anotação apareça na página, é só uma anotaçãozinha para tua referência no código. Te apresento os _comentários_ no HTML.
 
-Neste exemplo você deixou uma explicação sobre a tag `<bloquote>`para não esquecer seu significado. Basta deixar o comentário entre `<!--`e `-->`que o navegador simplesmente irá ignorá-lo quando for renderizar o site. Ficaria assim:
+Neste exemplo você deixou uma explicação sobre a tag `<bloquote>` para não esquecer seu significado. Basta deixar o comentário entre `<!--`e `-->`que o navegador simplesmente irá ignorá-lo quando for renderizar a página. Ficaria assim:
 
 ```html
     <p>
