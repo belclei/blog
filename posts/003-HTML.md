@@ -7,7 +7,8 @@ createdAt: '2022-01-21T06:00:00.300-03:00'
 ---
 
 A intenção deste post é ser bastante prático, para que aprendas enquanto faz suas primeiras páginas web. Se você já conhece, acompanhe até o final, pois pode aprender coisa nova.
-Te peço feedback.
+
+Ao final, por favor, deixe o seu feedback. Vou curtir muito saber se estou no caminho certo.
 
 # Conceitos
 
@@ -16,25 +17,25 @@ Antes de colocarmos a mão na massa de verdade quero te apresentar o conceito ma
 Eu te falei no último post que quando foi criada a web, a intenção era que trabalhos científicos fossem divulgados de uma maneira eficiente, e que pudessem se interligar, formando uma verdadeira teia de informações. Pois bem, você já viu um trabalho científico? Uma pequena representação de um texto científico pode ser representada assim:
 
 ```
-1.0 Mitocondrias
+1.0 Mitocôndrias
 Aqui eu faço uma abertura do conteúdo que está por vir.
-1.1 Tipos de mitocondrias
-Aqui eu começo a falar sobre os tipos de mitocondrias.
-1.2 Porque mitocondrias são importantes?
+1.1 Tipos de mitocôndrias
+Aqui eu começo a falar sobre os tipos de mitocôndrias.
+1.2 Porque mitocôndrias são importantes?
 Conforme disse o professor Entendido Da Silva, no artigo "A importância das mitocôndrias":
-"As mitocondrias são importantes. Elas são MITO.".
+"As mitocôndrias são importantes. Elas são MITO.".
 ```
 
 Mas este texto, assim, corrido, sem cores, nem hierarquia visual, nem ligações, é só um texto. Como poderíamos fazer com que este texto ficasse então bem formatadinho, para facilitar a vida de quem está tentando ler? Será que não tem alguma maneira de fazer uma "marquinha" no texto indicando, por exemplo, onde é o título, pra fazer ele ficar em destaque? Pois bem, existe sim, é a _tag_. A tag é usada para indicar ao _navegador_, que é quem processa o html, quando você quer que ele trate um pedacinho do texto de maneira diferente do que vinha fazendo até então.
 
-Por exemplo, vamos incluir a marcação do título principal do texto. Ficaria assim: `<titulo>1.0 Mitocondrias</titulo>`. A primeira marcação é a tag de abertura, e a última é a tag de fechamento. Se quisessemos mudar o comportamento da tag título, indicando, por exemplo, que texto deve estar em vermelho, poderíamos incluir um atributo informando a cor desejada. Neste caso: `<titulo cor="vermelha">1.0 Mitocondrias</titulo>`. Agora, ao processar o HTML, o navegador sabe que além de dar destaque, também deve deixar o texto "1.0 Mitocondrias"em vermelho.
+Por exemplo, vamos incluir a marcação do título principal do texto. Ficaria assim: `<titulo>1.0 Mitocôndrias</titulo>`. A primeira marcação é a tag de abertura, e a última é a tag de fechamento. Se quiséssemos mudar o comportamento da tag título, indicando, por exemplo, que texto deve estar em vermelho, poderíamos incluir um atributo informando a cor desejada. Neste caso: `<titulo cor="vermelha">1.0 Mitocôndrias</titulo>`. Agora, ao processar o HTML, o navegador sabe que além de dar destaque, também deve deixar o texto "1.0 Mitocôndrias"em vermelho.
 
 Então, a anatomia de uma tag HTML é:
 
 - Tag de abertura: `<titulo>`
 - Atributos (quantos forem necessários): `cor`
 - Valores dos atributos: `vermelha`
-- Conteúdo, ou filho: `1.0 Mitocondrias`
+- Conteúdo, ou filho: `1.0 Mitocôndrias`
 - Tag de fechamento: `</titulo>`
 
 Quando uma tag não possui conteúdo filho, como por exemplo a tag que indica quebra de linha, podemos usar uma maneira simplificada de representação. Neste caso a tag fecha nela mesma, ou seja, não há necessidade de uma tag de abertura e outra de fechamento, basta incluir uma barra ao final da tag: `<QuebraDeLinha />`.
@@ -77,7 +78,7 @@ Estão todos presentes no HTML. Mas e todo o resto?
 
 Bom, todo o resto é o que indica como se dará a estrutura da página e de que maneira estes textos estarão dispostos na página.
 
-Podemos perceber que "Minha primeira página HTML" é o título da página. É por isso que ela está um pouco separadinha dos outros textos, entre as _tags_(guarde esse nome) `<title>` e `</title>`. Agora note que os outros textos estão na parte principal da página (com fundo branco). Esta parte foi denominada como corpo da página. É por isso que foram todos colocados entre `<body>` e `</body>`.
+Podemos perceber que "Minha primeira página HTML" é o título da página. É por isso que ela está um pouco separadinha dos outros textos, entre as tags `<title>` e `</title>`. Agora note que os outros textos estão na parte principal da página (com fundo branco). Esta parte foi denominada como corpo da página. É por isso que foram todos colocados entre `<body>` e `</body>`.
 
 Agora sobre os estas 3 linhas onde estão presentes os textos que vemos na página, porquê ao texto "Olá, Mundo!" é um pouco maior do que os outros? Porque a tag `h1` indica que ele é um título do texto. Agora vamos falar sobre a tag `p`, que é uma abreviação de parágrafo. É nela que é colocado o texto normal de uma página.
 
@@ -89,7 +90,7 @@ O `doctype`, na primeira linha, indica qual das versões do HTML será usado par
 
 Todo o HTML que escrevemos deve necessariamente ser filho de uma tag `<html>`. E neste caso utilizamos o atributo "lang" para indicar que os textos estão escritos em Português (BR).
 
-Os dois elementos filhos de `<html>` são `<head>` e `<body>`. O segundo você já viu, diz respeito ao conteúdo em sí. Na tag `<head>` é onde são definidas algumas informações sobre o documento, a principal é a `<title>`. Neste lugar também é usada a tag `<meta>`, que é utilizada para descrever os metadados de uma página. Geralmente são utilizadas várias vezes em uma página, cada uma descrevendo um atributo diferente. Neste nosso exercício foi indicado que a codificação dos caracteres está em "UTF-8". Te explico melhor algum dia desses. Por hora, segue usando assim. Outros atributos da tag meta também podem indicar para o google informações que serão exibidas quando alguém pesquisar pelo teu site, por exemplo. Este também é um assunto para um próximo artigo.
+Os dois elementos filhos de `<html>` são `<head>` e `<body>`. O segundo você já viu, diz respeito ao conteúdo em sí. Na tag `<head>` é onde são definidas algumas informações sobre o documento que não aparecem na página, a principal é a `<title>`. Neste lugar também é usada a tag `<meta>`, que é utilizada para descrever os metadados de uma página. Geralmente são utilizadas várias vezes em uma página, cada uma descrevendo um atributo diferente. Neste nosso exercício foi indicado que a codificação dos caracteres está em "UTF-8". Te explico melhor algum dia desses. Por hora, segue usando assim. Outros atributos da tag meta também podem indicar para o google informações que serão exibidas quando alguém pesquisar pelo teu site, por exemplo. Este também é um assunto para um próximo artigo.
 
 Agora acho que você já está entendendo como funciona esse negócio de tags. Mas você não precisa acreditar em mim, te dizendo que o resultado daquele html vai ser a página que te mostrei. Crie aí no teu computador um arquivo chamado `primeiro.html` e escreva o código html que te mostrei. Para isso você pode utilizar o bloco de notas mesmo. Em seguida, abra este arquivo utilizando qualquer navegador à sua escolha (Edge, Chrome, Safari, Firefox, etc).
 
@@ -193,7 +194,7 @@ E se nesse processo você tiver alguma dúvida, basta vir aqui e deixá-la nos c
 
 Isso me fez lembrar de outro recurso presente no HTML. Imagine que você queira deixar alguma anotação no seu arquivo HTML para facilitar o teu entendimento quando ler o código. Você não quer que esta anotação apareça na página, é só uma anotaçãozinha para tua referência no código. Te apresento os _comentários_ no HTML.
 
-Neste exemplo você deixou uma explicação sobre a tag `<bloquote>` para não esquecer seu significado. Basta deixar o comentário entre `<!--`e `-->`que o navegador simplesmente irá ignorá-lo quando for renderizar a página. Ficaria assim:
+Neste exemplo você deixou uma explicação sobre a tag `<bloquote>` para não esquecer seu significado. Basta deixar o comentário entre `<!--`e `-->` que o navegador simplesmente irá ignorá-lo quando for renderizar a página. Ficaria assim:
 
 ```html
     <p>
@@ -217,4 +218,5 @@ Até a próxima. 👨🏻‍💻
 https://www.pressca.com.br/blog/metodos-de-preparo-de-cafe/
 
 https://www.w3schools.com/
+
 https://developer.mozilla.org/
