@@ -39,7 +39,11 @@ A rivalidade se estendia também no campo tecnológico. Os soviéticos lançaram
 
 E já que o medo era tanto, os Estados Unidos queriam se proteger de possíveis bombardeios em terras americanas. Uma das preocupações era que se pontos específicos fossem atingidos, todas as telecomunicações do país poderiam entrar em colapso. Foi então que o departamento de defesa, através da agência de projetos de pesquisa avançada (em inglês formando o acrônimo ARPA) resolveu criar a ARPANet, uma rede de computadores onde cada ponto se equivale, ou seja, não há comando central. E sendo assim, caso um destes pontos saia da rede por algum motivo, nenhum dos outros pontos é afetado.
 
-![Representação de um esquema descentralizado de conexões](/posts/001/40.png)
+Resumindo, até então, a comunicação entre computadores era como uma linha de trem. Se uma estação é interditada, todo o sistema a partir dali é afetado. E a comunicação é interrompida. Possibilidade real de todo o sistema entrar em colapso.
+
+Mas o sistema implementado com a ARPAnet se assemelha a como funcionam as linhas de ônibus, em que caso uma estação fique indisponível, a comunicação é redirecionada organicamente para o próximo ponto de carga e descarga, sem afetar os demais pontos.
+
+![Imagem ilustrativa exibindo rodovia e ferrovia](/posts/001/40.jpg)
 
 ## A rede mundial de computadores
 
