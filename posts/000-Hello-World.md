@@ -10,7 +10,7 @@ image: '/posts/000.png'
 
 Meu nome provavelmente não é muito conhecido por você ainda, então deixa eu me apresentar. Meu nome é Belclei Fasolo e sou desenvolvedor de software.
 
-Já trabalhei com tecnologias mainframe, como COBOL e PL/I. Na época do VB6, também desenvolvi para desktop. Fiz até um chat e um gerenciador de arquivos.
+Já trabalhei com tecnologias mainframe, como COBOL e PL/I. Na época do desktop, também desenvolvi utilizando VB.Net e até VB6. Fiz até um chat e um gerenciador de arquivos.
 No backend, Java e C#. Passando para o frontend, desenvolvo para a web desde antes do HTML 5, usando frameworks javascript tipo JQuery e Angular, mas o preferido é o ReactJS.
 
 Sou formado em Analise de Sistemas, e possuo duas especializações, uma em Recursos de Tecnologia da Informação aplicados à Administração de Empresas, e a outra pós é em Desenvolvimento Mobile. Foi lá que conheci o tecnologias como ionic, xamarin, swift e react native, por exemplo.
