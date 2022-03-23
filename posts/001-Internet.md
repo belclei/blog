@@ -5,7 +5,7 @@ subtitle: 'Você ainda consegue imaginar a tua vida sem internet? Ela não chego
 Mesmo assim, teve gente que passou por sérios problemas outro dia que aplicativos de mensagens instantâneas passaram por instabilidades. Pessoas simplesmente esqueceram que poderiam se comunicar por simples ligações telefônicas.'
 image: '/posts/001.png'
 createdAt: '2022-01-07T06:00:01.300-03:00'
-video: 'https://youtu.be/qmRkr3icu-Q'
+video: 'qmRkr3icu-Q'
 ---
 
 ![Pessoas utilizam celular apenas para usar internet](/posts/001/10.png)
